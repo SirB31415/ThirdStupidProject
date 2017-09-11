@@ -24,6 +24,9 @@ public class StupidController
 		System.out.println(firstCircle);
 		System.out.println(secondCircle);
 		
+		Scanner myScanner = new Scanner(System.in);
+		System.out.println("How big of a circle do you want?");
+		int circleSize = myScanner.nextInt();
 		PlayDohCircle thirdCircle = new PlayDohCircle(circleSize);
 		System.out.println(thirdCircle);
 		
@@ -31,9 +34,7 @@ public class StupidController
 		System.out.println("Look out a snakey snake!!!");
 		System.out.println(firstSnake);
 		
-		Scanner myScanner = new Scanner(System.in);
-		System.out.println("How big of a circle do you want?");
-		int circleSize = myScanner.nextInt();
+
 		
 		testScanner();
 		
