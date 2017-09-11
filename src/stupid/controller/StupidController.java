@@ -1,11 +1,13 @@
 package stupid.controller;
-
+import stupid.model.PlayDohCircle;
+import stupid.model.MySnakeySnake;
 import java.util.Scanner;
 /**
  * 
  * @author Parker Brailow
  *
  */
+
 public class StupidController
 {
 	
@@ -13,14 +15,34 @@ public class StupidController
 	{
 		System.out.println("nailed it");
 		
+		
+		PlayDohCircle firstCircle = new PlayDohCircle();
+		PlayDohCircle secondCircle;
+		secondCircle = new PlayDohCircle();
+		
+		System.out.println("look I made a circle");
+		System.out.println(firstCircle);
+		System.out.println(secondCircle);
+		
+		PlayDohCircle thirdCircle = new PlayDohCircle(1);
+		System.out.println(thirdCircle);
+		
+		MySnakeySnake firstSnake = new MySnakeySnake();
+		System.out.println("Look out a snakey snake!!!");
+		System.out.println(firstSnake);
+		
 		testScanner();
+		
 	}
+
+
 	private void testScanner()
 	{
 		Scanner firstScanner;
 		firstScanner = new Scanner(System.in);
+		
 		System.out.println("What is your favorite food?");
-		String answer = firstScanner.nextline();
-		System.out.println("Oh" + answer "thats okay");
+		String answer = firstScanner.next();
+		System.out.println("Oh " + answer + "run");
 	}
 }
