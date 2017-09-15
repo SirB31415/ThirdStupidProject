@@ -29,6 +29,11 @@ public class StupidController
 		int circleSize = myScanner.nextInt();
 		PlayDohCircle thirdCircle = new PlayDohCircle(circleSize);
 		System.out.println(thirdCircle);
+		System.out.println("What size should we change it to?");
+		int updated = myScanner.nextInt();
+		thirdCircle.setSize(updated);
+		System.out.println("The circle is now...");
+		System.out.println(thirdCircle);
 		
 		MySnakeySnake firstSnake = new MySnakeySnake();
 		System.out.println("Look out a snakey snake!!!");
